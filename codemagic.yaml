@@ -127,7 +127,7 @@ workflows:
                 npx cap sync # <- update native dependencies and copy web assets to native project
             - name: Wrapper
               script: | 
-                cd android && gradlew wrapper
+                cd android && gradle wrapper
             - name: Build Android release
               script: |
                 cd android && ./gradlew assembleRelease
